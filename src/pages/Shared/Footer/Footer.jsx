@@ -1,9 +1,10 @@
 import { FaArrowRight, FaEnvelope, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import moment from 'moment';
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#9EC8B9] w-full h-full">
+      <div className="bg-[#9EC8B9] w-full rounded-t-3xl pt-5 h-full">
         {/* last part of the footer */}
 
         <div className="flex w-full justify-around">
@@ -49,9 +50,9 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="footer footer-center p-4 bg-base-300 text-base-content">
+        <div className="footer footer-center p-4 bg-[#1b42429a] text-white">
           <aside>
-            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            <p>Copyright © {moment().format("Y")}- All right reserved by ACME Industries Ltd</p>
           </aside>
         </div>
       </div>
