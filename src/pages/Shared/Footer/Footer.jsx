@@ -38,7 +38,7 @@ const Footer = () => {
                </div>
                 <div className="flex border-b-2 border-[#1B4242] items-center ">
                     <FaEnvelope></FaEnvelope>
-                    <input className="bg-transparent ps-5 text-black h-10" placeholder="Inter your email" type="email" />
+                    <input className="bg-transparent ps-5 border-0 text-black h-10" placeholder="Inter your email" type="email" />
                     <FaArrowRight className=""></FaArrowRight>
                 </div>
                 <div className="flex mt-8 justify-start gap-10">
