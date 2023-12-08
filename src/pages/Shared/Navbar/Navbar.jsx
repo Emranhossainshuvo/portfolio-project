@@ -1,3 +1,5 @@
+import { FaUser } from "react-icons/fa";
+
 const Navbar = () => {
   const navItems = (
     <>
@@ -25,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar lg:pe-6 rounded-3xl bg-[#9EC8B9]">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +48,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#5C8374] rounded-box w-52"
             >
                 {navItems}
             </ul>
@@ -54,10 +56,13 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+          <ul className="menu menu-horizontal bg-[#1B4242] rounded-2xl text-[#9EC8B9] px-1">{navItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          {
+            <FaUser></FaUser>
+            
+            }
         </div>
       </div>
     </>
